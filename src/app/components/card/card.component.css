@@ -1,0 +1,8 @@
+.info-project{
+    overflow: hidden;
+    display: -webkit-inline-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,20 @@
+<div>
+    <button (click)="openInfo()" class=" hover:shadow-2xl hover:shadow-indigo-500 relative bg-gray-900 w-60 py-3 rounded-md m-10">
+        <div class="bg-gray-900 absolute rounded-md top-0 right-0 w-6/12 min-h-10 py-2 flex items-center justify-center lg:text-sm font-bold text-white ">
+            {{name}}
+        </div>
+        <div class="bg-white w-11/12 mx-auto rounded-md overflow-hidden">
+            <img [src]="image" alt="projectImage">
+        </div>
+        <div class=" w-11/12 mx-auto">
+            <div class="flex flex-wrap gap-2 text-xs px-auto px-2 py-3 ">
+                <span *ngFor="let tecnology of tecnologias; let index = index" class=" text-teal-300 font-bold my-1"><span *ngIf="index<5" class="bg-teal-600 px-2 py-1 rounded-md">{{tecnology}}</span></span>
+                <span *ngIf="tecnologias[5]" class="text-white flex items-end">...</span>
+            </div>
+            <div class="bg-gray-600 rounded-md text-left text-white">
+                <div class="p-2 font-bold">{{name}}</div>
+                <div class="ps-2 text-xs text-pretty info-project">{{info}}</div>
+            </div>
+        </div>
+    </button>
+</div>

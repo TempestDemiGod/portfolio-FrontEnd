@@ -1,0 +1,20 @@
+<div class="">
+    <nav class="flex relative justify-between px-6 md:justify-around items-center py-2">
+        <div class="w-12">
+            <img class="w-full logo" src="https://res.cloudinary.com/tempestdemigod/image/upload/v1707959949/coffeWeb/website%20image/l5262d20tad5g0sfyrxi.png" alt="logo">
+        </div>
+        <div class="text-white hidden relative md:flex gap-4 justify-end w-8/12 ">
+            <a href="#skills" class="hover:text-violet-500">Habilidades</a>
+            <a href="#project"  class="hover:text-violet-500">Proyectos</a>
+            <a href="#contact"  class="hover:text-violet-500">Contacto</a>
+        </div>
+        <button (click)="menuIf= !menuIf" class="md:hidden w-10 h-10 rounded-md hover:bg-gray-500 text-white">
+            <i class=" fa-solid fa-bars"></i>
+        </button>
+    </nav>
+    <div *ngIf="menuIf" class="md:hidden w-full absolute z-20 bg-gray-800/80 py-4">
+        <a href="#skills" class="hover:text-violet-500 text-white w-full block ps-4">Habilidades</a>
+        <a href="#project"  class="hover:text-violet-500 text-white w-full ps-4 block">Proyectos</a>
+        <a href="#contact"  class="hover:text-violet-500 text-white w-full ps-4 block">Contacto</a>
+    </div>
+</div>

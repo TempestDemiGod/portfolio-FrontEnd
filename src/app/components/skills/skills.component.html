@@ -1,0 +1,6 @@
+<div class="w-[calc(80vw)] md:max-w-[calc(36vw)] xl:max-w-[calc(32vw)]  py-4 px-6 min-h-40 bg-gray-900 hover:border-white my-6 mx-4 rounded-md border-2 border-gray-400 text-gray-200 hover:text-white hover:shadow-xl hover:shadow-violet-500">
+    <h2 class="text-center font-bold text-xl">{{skill?.name}}</h2>
+    <div class=" w-full text-center mt-4 pb-4 pt-2">
+        <span *ngFor="let item of listSkills" class="border-gray-400 border-2 mx-2 inline-flex items-center px-4 py-1 min-h-12 rounded-md mt-2"> <img class="w-8 me-2" [src]="item.image" alt="logo"> {{item.name}} </span>
+    </div>
+</div>
